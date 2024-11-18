@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Contact Us</h2>
+
+  <!-- Contact Form -->
+  <form action="/contact" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="contact_name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="contact_email" required>
+    <br>
+    <label for="subject">Subject:</label>
+    <select id="subject" name="contact_subject" required>
+      <option value="General Inquiry">General Inquiry</option>
+      <option value="Sales">Sales</option>
+    </select>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="contact_message" required></textarea>
+    <br>
+    <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Contact Information -->
+
+  <h3>Contact Information</h3>
+  <p>Phone:91+ 8657284040</p>
+  <p>Email: <a href="paperhub@gmail.com">paperhub@gmail.com</a></p>
+
+  <h3>Business Hours</h3>
+  <p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+  <p>Saturday - Sunday: Closed</p>
+
+  <h3>Frequently Asked Questions</h3>
+  <ul>
+    <li><strong>How can I track my order?</strong> <p>You can track your order using the tracking number sent to your email.</p></li>
+    <li><strong>What is your return policy?</strong> <p>We accept returns within 30 days of purchase.</p></li>
+  </ul>
+
+  <p>Your information is safe with us. We will never share or sell your details.</p>
+</body>
+</html>
+
+

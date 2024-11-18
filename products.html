@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Hub - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+
+
+        </nav>
+    </header>
+
+    <section class="product-page">
+        <aside class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#all" onclick="showAllProducts()">All</a></li>
+                <li><a href="#Books" onclick="showCategory('Books')">Books</a></li>
+                <li><a href="#Pens" onclick="showCategory('Pens')">Pens</a></li>
+                <li><a href="#Pencils" onclick="showCategory('Pencils')">Pencils</a></li>                
+                <li><a href="#Paper" onclick="showCategory('Paper')">Paper</a></li>
+                <li><a href="#Toys" onclick="showCategory('Toys')">Toys</a></li>
+                <li><a href="#Others" onclick="showCategory('Others')">Others</a></li>
+            </ul>
+        </aside>
+
+        <section class="products" id="product-list">
+            <!-- Product Category Sections -->
+            <div class="category-section" id="Books">
+                <h2>Books</h2>
+                <!-- Products for Books Category -->
+                <div class="product-item">
+                    <figure>
+                        <img src="book1.jpg" alt="A4 book" width="80" height="70">
+                        <h3>Spiral Notebook</h3>
+                        <figcaption>A4 size Exercise note book</figcaption>
+                    </figure>      
+                    <p>Price: ₹150</p>
+                    <button onclick="addToCart('Spiral Notebook', 150)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="hardbound-notebook.jpg" alt="A4 book" width="70" height="70">
+                        <h3>Hardbound Notebook</h3>
+                        <figcaption>A4 size Exercise note book</figcaption>
+                      </figure> 
+                    <p>Price: ₹270</p>
+                    <button onclick="addToCart('Hardbound Notebook', 270)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="graph-paper-notebook.jpg" alt="A4 book" width="60" height="70">
+                        <h3>Graph Paper Notebook</h3>
+                        <figcaption>A4 size Exercise note book</figcaption>
+                      </figure> 
+                    <p>Price: ₹70</p>
+                    <button onclick="addToCart('Graph Paper Notebook', 70)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="graphnotebook.jpeg" alt="A4 book" width="80" height="80">
+                        <h3>Graph Notebook</h3>
+                        <figcaption>A4 size Graph Notebook</figcaption>
+                      </figure> 
+                    <p>Price: ₹50</p>
+                    <button onclick="addToCart('Graph Notebook', 0)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <h3>Drawing book</h3>
+                    <figure>
+                        <img src="drawingbook.jpeg" alt="A4 book" width="90" height="90">
+                        <figcaption>A4 size Drawing book</figcaption>
+                      </figure> 
+                    <p>Price: ₹70</p>
+                    <button onclick="addToCart('Drawing book', 70)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="h2.jpg" alt="A4 book" width="80" height="90">
+                            <h3>Classic Notebook</h3>
+                            <figcaption>Classic Notebook,Plain book  240 pages (Green)</figcaption>
+                        </figure>      
+                        <p>Price: ₹285</p>
+                        <button onclick="addToCart('Classic Notebook', 285)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <h3>Drawing book</h3>
+                        <figure>
+                            <img src="drawingbook1.jpeg" alt="A4 book" width="80" height="80">
+                            <figcaption>A3 size Drawing book</figcaption>
+                          </figure> 
+                        <p>Price: ₹30</p>
+                        <button onclick="addToCart('Drawing book', 30)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="sketchbook.jpg" alt="A4 book" width="90" height="90">
+                            <h3>Sketch Book</h3>
+                            <figcaption> CANVAS 50 Sheet A5 Sketchbook Set | Top Spiral-Bound Sketchpad for Artists</figcaption>
+                          </figure> 
+                        <p>Price: ₹150</p>
+                        <button onclick="addToCart('Drawing book', 150)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="sketchbook1.jpg" alt="A4 book" width="90" height="90">
+                            <h3>Sketch Book</h3>
+                            <figcaption> BRUSTRO Artists Sketch Book Spiral A5 Size | 120 Pages| Ideal for Drawing, Sketching, Mandala, Shading Art, Students, School</figcaption>
+                          </figure> 
+                        <p>Price: ₹360</p>
+                        <button onclick="addToCart('Drawing book', 360)">Add to Cart</button>
+                    </div>
+                <div class="product-item">
+                    <h3>Notebooks</h3>
+                    <figure>
+                        <img src="notebooks1.jpeg" alt="A4 book" width="80" height="80">
+                        <figcaption>A4 size Notebook book</figcaption>
+                      </figure> 
+                    <p>Price: ₹60</p>
+                    <button onclick="addToCart('Notebook', 60)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="ruledbook.jpeg" alt="notebook" width="80" height="80">
+                        <h3>Ruled book</h3>
+                        <figcaption>Notebooks</figcaption>
+                      </figure> 
+                    <p>Price: ₹30</p>
+                    <button onclick="addToCart('Diary', 30)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="diary.jpeg" alt="book" width="80" height="80">
+                        <h3>Diary</h3>
+                        <figcaption>Diary for personal use</figcaption>
+                      </figure> 
+                    <p>Price: ₹80</p>
+                    <button onclick="addToCart('Diary', 80)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+            
+            <div class="category-section" id="Pens" style="display: none;">
+                <h2>Pens</h2>
+                <!-- Products for Pens Category -->
+                <div class="product-item">
+                    <figure>
+                        <img src="gelpen.jpg" alt="gelpen" width="80" height="80">
+                        <h3>Gel Pen</h3>
+                        <figcaption>Pentonic Gel Pen Set of 10</figcaption>
+                    </figure> 
+                    <p>Price: ₹110</p>
+                    <button onclick="addToCart('Gel Pen', 110)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="ballpen.jpg" alt="ballpen" width="80" height="90">
+                        <h3>Ballpoint pen</h3>
+                        <figcaption>Reynolds Blue Pen</figcaption>
+                      </figure> 
+                    <p>Price: ₹90</p>
+                    <button onclick="addToCart('Ballpoint pen', 90)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pen2.jpg" alt="pen" width="80" height="80">
+                        <h3>Octane pen</h3>
+                        <figcaption>Octance Pen| Set of 5</figcaption>
+                      </figure> 
+                    <p>Price: ₹50</p>
+                    <button onclick="addToCart('Octance pen ', 50)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="h1.jpg" alt="pen" width="80" height="80">
+                        <h3>Cello Signature Pen</h3>
+                        <figcaption>Cello Signature Pen with 1 Refill |</figcaption>
+                    </figure> 
+                    <p>Price: ₹110</p>
+                    <button onclick="addToCart('Cello Signature Pen', 110)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pen3.jpg" alt="pen" width="80" height="80">
+                        <h3>Clicker pen</h3>
+                        <figcaption>Clicker Pen|pack of 10 </figcaption>
+                      </figure> 
+                    <p>Price: ₹100</p>
+                    <button onclick="addToCart('Clicker pen', 100)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pen4.jpg" alt="pen" width="80" height="80">
+                        <h3>Black pen</h3>
+                        <figcaption>Cello black Pen|pack of 10 </figcaption>
+                      </figure> 
+                    <p>Price: ₹100</p>
+                    <button onclick="addToCart('Black pen', 100)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pen5.jpg" alt="pen" width="80" height="80">
+                        <h3>Black Gelpen</h3>
+                        <figcaption>Reynolds black GelPen </figcaption>
+                      </figure> 
+                    <p>Price: ₹100</p>
+                    <button onclick="addToCart('Black gelpen', 100)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="category-section" id="Pencils" style="display: none;">
+                <h2>Pencils</h2>
+                <!-- Products for Pencils Category -->
+                <div class="product-item">
+                    <figure>
+                        <img src="pencil1.jpg" alt="pencil" width="80" height="80">
+                        <h3>Graphite Pencil</h3>
+                        <figcaption>BRUSTRO Artists Fineart Graphite Pencil Set of 12</figcaption>
+                    </figure> 
+                    <p>Price: ₹310</p>
+                    <button onclick="addToCart('Graphite Pencil', 310)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pencil2.jpg" alt="pencil" width="80" height="80">
+                        <h3>Colour Pencil</h3>
+                        <figcaption>DOMS colour pencil</figcaption>
+                      </figure> 
+                    <p>Price: ₹250</p>
+                    <button onclick="addToCart('DOMS Colour Pencil', 250)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pencil3.jpg" alt="pencil" width="80" height="80">
+                        <h3>Colour Pencil</h3>
+                        <figcaption>Camlin colour pencil 24 shades</figcaption>
+                      </figure> 
+                    <p>Price: ₹120</p>
+                    <button onclick="addToCart('Camlin Colour Pencil', 120)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pencil4.jpg" alt="pencil" width="80" height="80">
+                        <h3>Mechanical Pencil</h3>
+                        <figcaption>BRUSTRO Mechanical Pencil | 0.7mm</figcaption>
+                      </figure> 
+                    <p>Price: ₹180</p>
+                    <button onclick="addToCart('Mechanical Pencil', 180)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pencil5.jpg" alt="pencil" width="60" height="80">
+                        <h3>Charcoal Pencil Set</h3>
+                        <figcaption>Apsara Charcoal Pencil Set of 3</figcaption>
+                      </figure> 
+                    <p>Price: ₹50</p>
+                    <button onclick="addToCart('Charcoal Pencil Set', 50)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="h3.jpg" alt="pencil" width="60" height="80">
+                        <h3>Apsara Pencils  </h3>
+                        <figcaption>Apsara Drawing Pencils 8B | Useful For Drawing, Sketching, Shading</figcaption>
+                      </figure> 
+                    <p>Price: ₹90</p>
+                    <button onclick="addToCart('Apsara Pencils', 90)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="pencil6.jpg" alt="pencil" width="70" height="80">
+                        <h3>Coloring Pencil Set</h3>
+                        <figcaption>Camlin Colour Pencil</figcaption>
+                      </figure>
+                    <p>Price: ₹65</p>
+                    <button onclick="addToCart('Coloring Pencil ', 65)">Add to Cart</button>
+                </div>
+            </div>
+                </div>
+            </div>
+            
+            <!-- Other category sections like Paper, Toys, etc. -->
+            <div class="category-section" id="Paper" style="display: none;">
+                <h2>Paper</h2>
+                <!-- Products for Paper Category -->
+                <div class="product-item">
+                    <figure>
+                        <img src="p1.jpg" alt="A4 size paper" width="80" height="80">
+                        <h3>A4 Size Card Paper</h3>
+                        <figcaption>A4 size card paper, 100 sheets</figcaption>
+                    </figure> 
+                    <p>Price: ₹350</p>
+                    <button onclick="addToCart('A4 Size Card Paper', 150)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="p2.jpg" alt="glitter paper" width="80" height="80">
+                        <h3>Glitter Paper</h3>
+                        <figcaption>Pack of 10 glitter sheets</figcaption>
+                    </figure> 
+                    <p>Price: ₹200</p>
+                    <button onclick="addToCart('Glitter Paper', 200)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="p3.jpg" alt="craft paper" width="80" height="80">
+                        <h3>Craft Paper</h3>
+                        <figcaption>Multi-colors Origami paper, 50 sheets</figcaption>
+                    </figure> 
+                    <p>Price: ₹60</p>
+                    <button onclick="addToCart('Craft Paper', 180)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="p4.jpg" alt="gift wrapping paper" width="80" height="80">
+                        <h3>Gift Wrapping Paper</h3>
+                        <figcaption>Pack of 5 rolls of assorted designs</figcaption>
+                    </figure> 
+                    <p>Price: ₹90</p>
+                    <button onclick="addToCart('Gift Wrapping Paper', 250)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="p5.jpg" alt="notebook wrapping paper" width="80" height="80">
+                        <h3>Notebook Cover Paper</h3>
+                        <figcaption>School txtbooks, notebooks brown cover</figcaption>
+                    </figure> 
+                    <p>Price: ₹120</p>
+                    <button onclick="addToCart('Notebook Wrapping Cover Paper', 120)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="p6.jpg" alt="printer paper" width="80" height="80">
+                        <h3>Printer Paper</h3>
+                        <figcaption>A4 size, 500 sheets</figcaption>
+                    </figure> 
+                    <p>Price: ₹390</p>
+                    <button onclick="addToCart('Printer Paper', 350)">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="category-section" id="Toys" style="display: none;">
+                <h2>Toys</h2>
+                <!-- Products for Toys Category -->
+                <div class="product-item">
+                    <figure>
+                        <img src="t1.jpg" alt="Teddy Bear" width="80" height="80">
+                        <h3>Teddy Bear</h3>
+                        <figcaption>Soft plush teddy bear, 12 inches</figcaption>
+                    </figure> 
+                    <p>Price: ₹300</p>
+                    <button onclick="addToCart('Teddy Bear', 300)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="t2.jpg" alt="Lego Set" width="80" height="80">
+                        <h3>Lego Set</h3>
+                        <figcaption>100-piece classic Lego building set</figcaption>
+                    </figure> 
+                    <p>Price: ₹500</p>
+                    <button onclick="addToCart('Lego Set', 500)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="t3.jpg" alt="Race Car" width="80" height="80">
+                        <h3>Race Car</h3>
+                        <figcaption>Remote-controlled race car with lights</figcaption>
+                    </figure> 
+                    <p>Price: ₹450</p>
+                    <button onclick="addToCart('Race Car', 450)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="t4.jpg" alt="Puzzle" width="80" height="80">
+                        <h3>Jigsaw Puzzle</h3>
+                        <figcaption>500-piece colorful jigsaw puzzle</figcaption>
+                    </figure> 
+                    <p>Price: ₹200</p>
+                    <button onclick="addToCart('Jigsaw Puzzle', 200)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="t5.jpg" alt="Action Figure" width="80" height="80">
+                        <h3>Action Figure</h3>
+                        <figcaption>Poseable superhero action figure</figcaption>
+                    </figure> 
+                    <p>Price: ₹350</p>
+                    <button onclick="addToCart('Action Figure', 350)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <figure>
+                        <img src="t6.jpg" alt="Board Game" width="80" height="80">
+                        <h3>Board Game</h3>
+                        <figcaption>Family fun board game, ages 6+</figcaption>
+                    </figure> 
+                    <p>Price: ₹400</p>
+                    <button onclick="addToCart('Board Game', 400)">Add to Cart</button>
+                </div>
+            </div>
+            
+                <!-- Product Category Sections -->
+                <div class="category-section" id="Others">
+                    <h2>Others</h2>
+                    <!-- Products for Others Category -->
+                    <div class="product-item">
+                        <figure>
+                            <img src="h4.jpg" alt="A4 book" width="80" height="70">
+                            <h3>Apsara Eraser</h3>
+                            <figcaption>Apsara Non Dust Erasers - Pack of 20</figcaption>
+                        </figure>      
+                        <p>Price: ₹100</p>
+                        <button onclick="addToCart('Apsara Eraser', 100)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o1.jpg" alt="highlighter" width="80" height="80">
+                            <h3>Highlighter Set</h3>
+                            <figcaption>Faber-Castell Highlighter Pack of 5<figcaption>
+                        </figure> 
+                        <p>Price: ₹150</p>
+                        <button onclick="addToCart('Highlighter Set', 150)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o2.jpg" alt="eraser" width="80" height="80">
+                            <h3>Eraser</h3>
+                            <figcaption>DOMS Dust-Free Erasers </figcaption>
+                        </figure> 
+                        <p>Price: ₹50</p>
+                        <button onclick="addToCart('Eraser', 50)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o3.jpg" alt="ruler" width="80" height="80">
+                            <h3>Ruler</h3>
+                            <figcaption>30cm Transparent Ruler</figcaption>
+                        </figure> 
+                        <p>Price: ₹20</p>
+                        <button onclick="addToCart('Ruler', 20)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o4.jpg" alt="marker" width="60" height="80">
+                            <h3>Whiteboard Marker</h3>
+                            <figcaption>whiteboardmarker in different Colors | Pack of 4</figcaption>
+                        </figure> 
+                        <p>Price: ₹140</p>
+                        <button onclick="addToCart('Whiteboard Marker', 140)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o5.jpg" alt="stapler" width="70" height="80">
+                            <h3>Stapler</h3>
+                            <figcaption>Mini Stapler with 100 Staples</figcaption>
+                        </figure> 
+                        <p>Price: ₹90</p>
+                        <button onclick="addToCart('Stapler', 90)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o6.jpg" alt="scissors" width="60" height="80">
+                            <h3>Scissors</h3>
+                            <figcaption>Multipurpose Scissors</figcaption>
+                        </figure> 
+                        <p>Price: ₹75</p>
+                        <button onclick="addToCart('Scissors', 75)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o7.jpg" alt="tape" width="80" height="80">
+                            <h3>Clear Tape</h3>
+                            <figcaption>1-inch Clear Tape | Pack of 2</figcaption>
+                        </figure> 
+                        <p>Price: ₹65</p>
+                        <button onclick="addToCart('Clear Tape', 65)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o8.jpg" alt="tape" width="80" height="80">
+                            <h3>Colourful Marker </h3>
+                            <figcaption>| Colourful Marker Brush Pens | Pen Set 12 Colors</figcaption>
+                        </figure> 
+                        <p>Price: ₹65</p>
+                        <button onclick="addToCart('Colourful Marker', 65)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o9.jpg" alt="tape" width="30" height="80">
+                            <h3>Sticky Glue </h3>
+                            <figcaption>Multi-Purpose Fevistik | Glue Stick for Decorations & Craft Projects</figcaption>
+                        </figure> 
+                        <p>Price: ₹25</p>
+                        <button onclick="addToCart('Sticky Glue', 25)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o10.jpg" alt="tape" width="60" height="80">
+                            <h3>File Folder </h3>
+                            <figcaption>Files for Certificates, Document Holder,</figcaption>
+                        </figure> 
+                        <p>Price: ₹80</p>
+                        <button onclick="addToCart('File Folder', 80)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o11.jpg" alt="tape" width="60" height="80">
+                            <h3>Colouful Sticky Note</h3>
+                            <figcaption>Sticky Note 3 set | For notes, reminders, study, school and organizing</figcaption>
+                        </figure> 
+                        <p>Price: ₹125</p>
+                        <button onclick="addToCart('Sticky Note', 125)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o12.jpg" alt="tape" width="60" height="80">
+                            <h3>Clipboard</h3>
+                            <figcaption>Paper Clipboard Writing Pad Clipboards Drawing, Writing</figcaption>
+                        </figure> 
+                        <p>Price: ₹100</p>
+                        <button onclick="addToCart('Clipboard', 100)">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <figure>
+                            <img src="o13.jpg" alt="tape" width="60" height="80">
+                            <h3>Notepad</h3>
+                            <figcaption>Ruled notepad 50 pages  | Take notes on the go with our lightweight notepad</figcaption>
+                        </figure> 
+                        <p>Price: ₹30</p>
+                        <button onclick="addToCart('Notepad', 30)">Add to Cart</button>
+                    </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paper Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize cart in localStorage if not already
+        if (!localStorage.getItem('cart')) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+
+        // Add to cart functionality
+        function addToCart(productName, productPrice) {
+            const cart = JSON.parse(localStorage.getItem('cart'));
+            const product = { name: productName, price: productPrice, quantity: 1 };
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${productName} added to cart!`);
+        }
+
+        // Show all products
+        function showAllProducts() {
+            document.querySelectorAll('.category-section').forEach(section => {
+                section.style.display = 'block';
+            });
+        }
+
+        // Show specific category products only
+        function showCategory(category) {
+            // Hide all category sections
+            document.querySelectorAll('.category-section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show selected category section
+            const categoryElement = document.getElementById(category);
+            if (categoryElement) {
+                categoryElement.style.display = 'block';
+            } else {
+                console.error("Category not found:", category); // Log if the category is not found
+            }
+        }
+    </script>
+
+</body>
+</html>

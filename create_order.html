@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Hub - Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Payment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about-us.html">About Us</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  
+  <section class="payment">
+    <h2>Complete Your Payment</h2>
+    <p>Click below to proceed with the payment:</p>
+
+    <form id="paymentForm">
+      <input type="text" id="customerName" placeholder="Your Name" required><br>
+      <input type="number" id="totalAmount" placeholder="Total Amount" required><br>
+      <button type="submit">Pay Now</button>
+    </form>
+    
+    <div id="paymentConfirmation" style="display:none;">
+      <h3>Your order has been placed!</h3>
+      <p>Order ID: <span id="orderId"></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Paper Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const customerName = document.getElementById('customerName').value;
+      const totalAmount = document.getElementById('totalAmount').value;
+
+      fetch('/process-payment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ customerName, totalAmount }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.paymentLink) {
+          // Redirect to Razorpay Payment Page
+          window.location.href = data.paymentLink;
+        } else {
+          alert('Error redirecting to payment page.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error processing your payment.');
+      });
+    });
+  </script>
+</body>
+</html>

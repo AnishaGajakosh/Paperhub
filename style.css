@@ -1,0 +1,342 @@
+/* Apply light orange background to the whole page */
+body {
+    background-color: #fff7e6; /* Light orange background */
+    background-attachment: auto;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    min-height: 150vh; /* Ensures the body fills the entire viewport */
+}
+
+
+header {
+    background-color: #d85c00; /* Warm orange for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo styling */
+header .logo {
+    width: 50px; /* Adjust based on your logo size */
+    height: 50px;
+    margin-right: 20px; /* Optional: space between logo and navigation */
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff1e0; /* Light warm background for hero section */
+}
+
+.hero button {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: #d85c00; /* Warm orange button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #b84e00;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 2px;
+    background-color: #d85c00;
+   
+}
+
+/* Basic styles for the product section */
+.products {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff4e1; /* Warm cream background for a softer feel */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+/* Flexbox layout for products */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Gap between product items */
+    margin-top: 20px;
+}
+
+/* Individual product card */
+.product-card {
+    border: 2px solid #ffb347; /* Warm golden border for the card */
+    border-radius: 15px; /* Rounded corners for a bubbly look */
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 300px; /* Fixed width for product cards */
+}
+
+/* Product image styles */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Image zoom on hover */
+    display: inline-block;
+    object-fit: cover; /* Ensures the image fills the container without stretching */
+}
+
+/* Product name */
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f39c12; /* Warm golden color for the title */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Product description */
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+/* Hover effects for product cards */
+.product-card:hover {
+    transform: translateY(-5px); /* Lift the card a bit */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Larger shadow for hover effect */
+}
+
+/* Hover effect for the image */
+.product-card img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Make the grid responsive on smaller screens */
+@media (max-width: 768px) {
+    .product-card {
+        width: 45%; /* 2 products per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 90%; /* 1 product per row on small screens */
+    }
+}
+
+
+
+
+
+/* Style for the auth links in the navigation */
+.auth-links {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* Apply light orange background to the whole page */
+body {
+    background-color: #fff7e6; /* Light orange background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 150vh; /* Ensures the body fills the entire viewport */
+}
+
+/* Header Styling */
+header {
+    background-color: #d85c00; /* Warm orange for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo styling */
+header .logo {
+    width: 50px; /* Adjust based on your logo size */
+    height: 50px;
+    margin-right: 20px; /* Optional: space between logo and navigation */
+}
+
+/* Navigation links styling */
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section (Banner or Introduction) */
+.hero {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff1e0; /* Light warm background for hero section */
+}
+
+.hero button {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: #d85c00; /* Warm orange button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #b84e00;
+}
+
+/* Footer Styling */
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #d85c00;
+}
+
+/* Basic styles for the product section */
+.products {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff4e1; /* Warm cream background for a softer feel */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+/* Flexbox layout for products */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Gap between product items */
+    margin-top: 20px;
+}
+
+/* Individual product card */
+.product-card {
+    border: 2px solid #ffb347; /* Warm golden border for the card */
+    border-radius: 15px; /* Rounded corners for a bubbly look */
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 300px; /* Fixed width for product cards */
+}
+
+/* Product image styles */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Image zoom on hover */
+    display: inline-block;
+    object-fit: cover; /* Ensures the image fills the container without stretching */
+}
+
+/* Product name */
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f39c12; /* Warm golden color for the title */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Product description */
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+/* Hover effects for product cards */
+.product-card:hover {
+    transform: translateY(-5px); /* Lift the card a bit */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Larger shadow for hover effect */
+}
+
+/* Hover effect for the image */
+.product-card img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Make the grid responsive on smaller screens */
+@media (max-width: 768px) {
+    .product-card {
+        width: 45%; /* 2 products per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 90%; /* 1 product per row on small screens */
+    }
+}
+
+/* Style for the auth links in the navigation */
+.auth-links {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+}
+
+/* Add margin to the main content to create spacing between products */
+.main-content {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Add padding to make the page look neater */
+.content-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+

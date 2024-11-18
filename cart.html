@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about-us.html">About Us</a>
+            <a href="cart.html">Cart</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <section class="cart-page">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <p id="empty-cart-message">Your cart is empty.</p>
+        
+        <!-- Display total amount -->
+        <p id="total-amount">Total: ₹0</p>
+        
+        <button id="checkout-button" onclick="redirectToCheckout()">Proceed to Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paper Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Retrieve cart from localStorage
+        function loadCart() {
+            
+            const cart = JSON.parse(localStorage.getItem('cart'));
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMessage = document.getElementById('empty-cart-message');
+            const checkoutButton = document.getElementById('checkout-button');
+            const totalAmount = document.getElementById('total-amount');
+            
+            if (cart && cart.length > 0) {
+                emptyCartMessage.style.display = 'none'; // Hide "cart is empty" message
+                cartItemsContainer.innerHTML = ''; // Clear any existing content
+                
+                let total = 0; // Initialize total amount
+                
+                cart.forEach((product, index) => {
+                    const productElement = document.createElement('div');
+                    productElement.classList.add('cart-item');
+                    productElement.innerHTML = `
+                        <h3>${product.name}</h3>
+                        <p>Price: ₹${product.price}</p>
+                        <label for="quantity-${index}">Quantity:</label>
+                        <input type="number" id="quantity-${index}" value="${product.quantity}" min="1" onchange="updateQuantity(${index}, this.value)">
+                        <button onclick="removeProduct(${index})">Remove</button>
+                    `;
+                    cartItemsContainer.appendChild(productElement);
+                    
+                    // Add price * quantity to the total
+                    total += product.price * product.quantity;
+                });
+
+                // Update the total amount
+                totalAmount.textContent = `Total: ₹${total}`;
+                checkoutButton.style.display = 'block'; // Show checkout button
+            } else {
+                emptyCartMessage.style.display = 'block'; // Show "cart is empty"
+                cartItemsContainer.innerHTML = ''; // Clear any existing content
+                checkoutButton.style.display = 'none'; // Hide checkout button
+                totalAmount.textContent = `Total: ₹0`; // Set total to 0
+            }
+        }
+
+        // Update quantity of a product in the cart
+        function updateQuantity(index, quantity) {
+            const cart = JSON.parse(localStorage.getItem('cart'));
+            if (quantity >= 1) {
+                cart[index].quantity = parseInt(quantity);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                loadCart(); // Reload the cart to reflect changes
+            }
+        }
+
+        // Remove a product from the cart
+        function removeProduct(index) {
+            const cart = JSON.parse(localStorage.getItem('cart'));
+            cart.splice(index, 1); // Remove the product at the given index
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart(); // Reload the cart after removal
+        }
+
+        // Redirect to the checkout page
+        function redirectToCheckout() {
+            if (localStorage.getItem('cart') && JSON.parse(localStorage.getItem('cart')).length > 0) {
+                window.location.href = 'checkout.html'; // Redirect to checkout page
+            } else {
+                alert('Your cart is empty. Add products before proceeding to checkout.');
+            }
+        }
+
+        // Load the cart when the page loads
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Apply light orange background to the whole page */
+body {
+    background-color: #fff7e6; /* Light orange background */
+    background-attachment: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 150vh; /* Ensures the body fills the entire viewport */
+}
+
+/* Header styles */
+header {
+    background-color: #d85c00; /* Warm orange for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container for form */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff4e1; /* Soft warm background for form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.container h1 {
+    text-align: center;
+    color: #d85c00;
+}
+
+/* Form input fields */
+form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffb347; /* Warm golden border */
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Submit button styling */
+form button {
+    background-color: #d85c00; /* Warm orange button */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: bac;
+}
